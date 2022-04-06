@@ -14,3 +14,4 @@ Design resources:
 * Sharing health data (figma): https://www.figma.com/file/b3OvJ896BqVFtqWsw4pQSv/PDM-Round-2?node-id=327%3A628
 * Draft concepts for Patient Data Manager (figma): https://www.figma.com/file/b3OvJ896BqVFtqWsw4pQSv/PDM-Round-2?node-id=1073%3A5519
 * Patient Data Manager design background: https://github.com/patient-data-manager/pdm-designs
+* 2021 draft of a draft of a draft PDM website: https://patient-data-manager.github.io/pdm-website/
