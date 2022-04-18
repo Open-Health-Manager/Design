@@ -1,6 +1,6 @@
-# Ideating User Stories
+# Top 100 Use Cases
 
-Top 100 Use Cases for the Open Health Manager project, sorted according to 6 broad user definitions
+Top 100 Use Cases for the Rosie (Open Health Manager) project, sorted according to 6 broad user personas.
 
 ## Broad User Definitions
 
@@ -13,11 +13,46 @@ A few user definitions that may not include all abilities or backgrounds, but wo
 5. *Lazaro A25* A 76 year old man with cognitive memory complications trying to better manage their medications
 6. *Dennis E53* A 55 year old man managing their blood pressure and heart health
 
-[synthea](synthea.mitre.org)
+[Synthea for future synthetic users with artificial health data](synthea.mitre.org)
 
-## Use Cases by functional category
+## Implemented User Stories
 
-Each use case is assigned a user and sorted into a general category of function
+### Onboarding
+
+#### As Finn, I want to...
+
+1. ...be able to sign in easily to Rosie so I can start managing my health better.
+
+2. ...see easy next steps and recommendations for managing my health so that I can quickly take action on my health journey.
+
+3. ...know what service I'm signing up for so that I can get a better idea of how Rosie will help me with my health goals.
+
+### Care Plan
+
+#### As Dennis, I want to...
+
+1. ...be able to easily see my most recent blood pressure so that I can better manage my cardiovascular health.
+
+2. ...be able to update my blood pressure easily so that I can get more recent recommendations on my cardio health. 
+
+3. ...know if my BP is abnormal so that I can take action to get it optimal again.
+
+4. ...see resources that can help me get my blood pressure taken so that I have up-to-date information in my treatment plan.
+
+## Upcoming Priority user stories/use cases
+
+### As Dennis, I want to...
+
+1. ...see what health to-do items are on my current commute route so that I can quickly get them taken care of without much change to my normal schedule.
+
+2. ...see if there are local rideshares or transit options so that I can get to my health appointments without spending too much money.
+
+3. ...find if there are caretakers or daycares near my health appointment so I don't have to worry about my kids while I'm at the doctor.
+
+
+## User stories by functional category
+
+Each user story is assigned a user and sorted into a general category of function
 
 1. Care Plans and recommendations
 2. Data sourcing and aggregation
@@ -131,7 +166,7 @@ Each use case is assigned a user and sorted into a general category of function
 #### Riley D32: Data Sourcing and Aggregation
 
 1. They want an easy interface for comparing data sources that look like they might be the same.
-
+5. Sh
 #### Dennis E53: Data Sourcing and Aggregation
 
 1. Their data source is giving incorrect information that he knows is wrong - he wants to give feedback on the poor data quality.
@@ -163,8 +198,15 @@ Each use case is assigned a user and sorted into a general category of function
 
 #### Choko Z21: 
 
+1. She wants to know how much the last visit cost for her partner.
+2. She wants to pay for a bill on her partners behalf.
+3. She wants to dispute a bill on her partners behalf.
+4. She wants to see her partners insurance information to give to a new provider.
 
 #### Lazaro A25: 
+
+1. He wants to get an estimate of costs for future services.
+2. He wants his health bills paid for automatically
 
 
 #### Finn B54: 
