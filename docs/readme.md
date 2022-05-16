@@ -18,4 +18,4 @@ gh repo clone Open-Health-Manager/Design
 
 3. Next, run `bundle install` in the `/docs` directory.
 
-4. Finally, run a local server using `bundle exec jekyll serve` and develop! You might want to develop on a separate branch, then create a pull request to merge that branch into the main one when your changes are ready for review.
+4. Finally, run a local server using `bundle exec jekyll serve` and develop! You might want to develop on a separate branch from `main`, then create a pull request to merge your branch into `main` when your changes are ready for review.
