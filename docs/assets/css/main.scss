@@ -1,0 +1,72 @@
+---
+---
+
+@import "minima", url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+
+/* Variable definitions */
+
+// colors
+
+$blush: #fa99af;
+$rouge: #f87797;
+$accent-blue: #c3dfe0;
+$violet: #c99abb;
+$background-gradient: linear-gradient(0, rgba(195,223,224,1) 0%, rgba(249,241,243,1) 100%);
+
+// grey colors
+$black: #1f201d;
+$stormy: #53554e;
+$grey: #838084;
+$fog: #cdceca;
+$snow: #f9f1f3;
+
+/* end variable definitions */
+
+// general
+body {
+    color: $background-gradient;
+    background-image: $background-gradient;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $stormy;
+}
+
+p {
+    color: $black;
+}
+
+.chat-container {
+    display: flex;
+    img {
+        width: 100px;
+        height: auto;
+    }
+    width: fit-content;
+
+}
+
+.site-title {
+    font-family: "Chicle";
+    font-size: 40px;
+    color: $blush;
+    &:active {
+        color: $violet;
+    }
+    &:hover {
+        color: $rouge;
+    }
+    &:visited {
+        color: $blush;
+    }
+}
+
+.home .page-heading {
+    display: none;
+}
+
+.chat-text {
+    background-color: $snow;
+    padding: 10px;
+    border-radius: 25px;
+}
