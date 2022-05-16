@@ -11,6 +11,19 @@ permalink: /
      <h2 class='chat-text'>Welcome, my name is Rosie!</h2>
 </section>
 
+<section class="hero">
+     <p>
+     <em class="ellipsis-lead">Rosie the Health Manager will...</em><br/>
+     ...put you in the driver’s seat for all of your health and healthcare decisions.<br/>
+     <em class="ellipsis-lead">Rosie the Health Manager will...</em><br/>
+     ...help you, your family, and your community to practice effective “primary self care”.<br/>
+     <em class="ellipsis-lead">Rosie the Health Manager will...</em><br/>
+     ...make improving and maintaining your health more and more simple for you, your family, and your community.
+     </p>
+</section>
+
+
+
 ## How Rosie works
 
 Rosie is built on a few fundamental principles:
