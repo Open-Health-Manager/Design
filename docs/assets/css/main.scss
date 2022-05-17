@@ -81,6 +81,36 @@ p {
     }
 }
 
+.screens-container {
+    width: 90vw;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    .app-images {
+        max-width: 250px;
+        position: absolute;
+        overflow: none;
+        z-index: 0;
+    }
+    #connect {
+        top: 0;
+    }
+    #generate {
+        top: 0;
+        left: 40px;
+        transform: rotate(10deg);
+        margin: 20px;
+        z-index: 1;
+    }
+    @media screen and (min-width: 600px) {
+        height: 550px;
+        width: 350px;
+    }
+}
+
+
+
 // navigation
 .site-navi { float: right; line-height: 54px; }
 .site-navi .nav-trigger { display: none; }

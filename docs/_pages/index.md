@@ -7,7 +7,7 @@ permalink: /
 ---
 <!--- bad, hacky html in md --->
 <section class= "chat-container">
-<img src="./assets/svg/rosie_hello.svg"
+<img src="{{ baseurl }}/assets/svg/rosie_hello.svg"
      alt="Rosie waving">
      <h2 class='chat-text'>Hi, my name is Rosie!</h2>
 </section>
@@ -37,7 +37,7 @@ Rosie is built on a few fundamental principles:
 - Rosie gets better all the time.
 - Rosie nudges you to drive your primary self-care.
 
-<img id="screen1" src="./assets/images/connect.png">
-<img id="screen2" src="./assets/images/generate.png">
-
-A MITRE project
+<section class="screens-container">
+     <img class="app-images" id="connect" src="{{ baseurl }}/assets/images/connect.png">
+     <img class="app-images" id="generate" src="{{ baseurl }}/assets/images/generate.png">
+</section>
