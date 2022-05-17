@@ -35,7 +35,7 @@ include:
 
 header_pages:
  - _pages/about.md
- - _pages/donate.md
+# - _pages/donate.md *** Add this in once the donation page is live ***
  - _pages/contact.md
 
 # Build settings
