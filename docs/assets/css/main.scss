@@ -61,6 +61,7 @@ p {
     }
 }
 
+// index page css
 .home .page-heading {
     display: none;
 }
@@ -69,4 +70,13 @@ p {
     background-color: $snow;
     padding: 10px;
     border-radius: 25px;
+}
+
+.hero {
+    margin: 25px 0px;
+    font-weight: bold;
+    .ellipsis-lead {
+        font-style: italic;
+        font-weight: 400;
+    }
 }

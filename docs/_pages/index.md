@@ -5,10 +5,11 @@ title: "Rosie"
 layout: home
 permalink: /
 ---
+<!--- bad, hacky html in md --->
 <section class= "chat-container">
 <img src="/assets/svg/rosie_hello.svg"
      alt="Rosie waving">
-     <h2 class='chat-text'>Welcome, my name is Rosie!</h2>
+     <h2 class='chat-text'>Hi, my name is Rosie!</h2>
 </section>
 
 <section class="hero">
@@ -22,7 +23,7 @@ permalink: /
      </p>
 </section>
 
-
+<!--- actual markdown --->
 
 ## How Rosie works
 
@@ -36,14 +37,7 @@ Rosie is built on a few fundamental principles:
 - Rosie gets better all the time.
 - Rosie nudges you to drive your primary self-care.
 
-### Info
+<img src="/assets/images/connect.png">
+<img src="/assets/images/generate.png">
 
-I make it easier to keep a patients health information in one place.
-
-### Principles
-
-I believe in Patient Data Ownership, so that patients are in the driver's seat of their health.
-
-## What is Rosie?
-
-include images here
+A MITRE project

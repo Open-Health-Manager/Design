@@ -12,8 +12,6 @@ Rosie is a type of personal health record (PHR), designed and built to keep all 
 
 Rosie is built on several key principles that guide the design and functionality of the service. They are:
 
-- 
-
 ### 4 parts of Rosie:
 
 1. The **Patient Data Use Agreement** (PDUA) is a contract between the patient and a service provider that states in clear, simple language or graphics, how data will be used and accessed.
@@ -31,7 +29,7 @@ Apache 2.0 License
 
 ### MITRE
 
-MITRE manages the project, concept and system mapping, building the patient data manager, and initial fundraising.
+MITRE manages and funds the project, drives system engineering and the concept, builds the patient data manager, and will lead fundraising.
 
 ### GoInvo
 

@@ -4,6 +4,4 @@ permalink: /contact/
 title: Contact
 ---
 
-## Contact
-
-[rosie@healthinfo.org](mailto:rosie@healthinfo.org)
+The Rosie team will get back to you within 1 business day. Our email is [rosie@healthinfo.org](mailto:rosie@healthinfo.org).
