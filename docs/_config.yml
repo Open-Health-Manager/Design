@@ -23,7 +23,7 @@ email: rosie@rosiehealth.org
 description: >- # this means to ignore newlines until "baseurl:"
   The open-source, free personal health manager.
 baseurl: / # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://open-health-manager.github.io/Design/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Open-Health-Manager
 
 author:
