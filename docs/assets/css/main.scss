@@ -3,7 +3,7 @@
 
 @import "minima", url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
 
-/* Variable definitions */
+/* VARIABLES */
 
 // colors
 
@@ -20,22 +20,37 @@ $grey: #838084;
 $fog: #cdceca;
 $snow: #f9f1f3;
 
-/* end variable definitions */
+/* END VARIABLES */
 
 // general
 body {
-    color: $background-gradient;
-    background-image: $background-gradient;
+    color: $snow;
+    background-image: $snow;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $stormy;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.75em
 }
 
 p {
+    text-align: center;
     color: $black;
 }
 
+// containers
 .chat-container {
     display: flex;
     img {
@@ -50,6 +65,7 @@ p {
     font-family: "Chicle";
     font-size: 40px;
     color: $blush;
+    display: block ruby;
     &:active {
         color: $violet;
     }
@@ -59,9 +75,11 @@ p {
     &:visited {
         color: $blush;
     }
+    img {
+        margin: 5px 10px;
+    }
 }
 
-// index page css
 .home .page-heading {
     display: none;
 }
@@ -72,59 +90,172 @@ p {
     border-radius: 25px;
 }
 
-.hero {
-    margin: 25px 0px;
-    font-weight: bold;
-    .ellipsis-lead {
-        font-style: italic;
-        font-weight: 400;
-    }
+
+// header
+
+header {
+
 }
 
-.screens-container {
-    width: 90vw;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-    .app-images {
-        max-width: 250px;
-        position: absolute;
-        overflow: none;
-        z-index: 0;
+// main
+.container {
+    h2 {
+        padding-top: 20px;
     }
-    #connect {
-        top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// section 1
+#welcome {
+    h1 {
+        font-size: 3em;
+        font-weight: 700;
+        margin: 0px;
     }
-    #generate {
-        top: 0;
-        left: 40px;
-        transform: rotate(10deg);
+    p:first-of-type {
+        font-size: 2em;
+        margin: 0px;
+    }
+    p:last-of-type {
+        
+        font-family: ubuntu;
+        font-size: 1.5em;
+    }
+    #mast {
+        width: 400px;
+        height: auto;
         margin: 20px;
-        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
     }
-    @media screen and (min-width: 600px) {
-        height: 550px;
-        width: 350px;
+
+}
+
+// section 2
+#how {
+    background-image: linear-gradient(0,rgba(249,241,243,1)0%, rgba(255, 206, 218, 1) 100%);
+    width: 100%;
+}
+
+.carousel {
+    .carousel-item {
+
+    }
+    .carousel-img {
+
+    }
+    .carousel-text {
+
+    }
+}
+
+#four-elements {
+    width: 80vw;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .quad-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 
+            400px 400px;
+        grid-template-rows:
+            auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .quad-item {
+        h3, p {
+            text-align: left;
+        }
+        border-left: solid 5px rgba(248, 119, 151, 0.5);
+        border-radius: 5px;
+        padding:20px;
+        align-items:center;
+        justify-content:center;
+        max-width: 400px;
+        height: fit-content;
+    }
+}
+
+#journey-map {
+
+}
+
+#why {
+    height: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-template-rows: 80px 400px;
+    grid-template-areas:
+        "h2-bin img-bin"
+        "p-bin img-bin";
+    h2 {
+        text-align: left;
+        grid-area: h2-bin;
+    }
+    p {
+        text-align: left;
+        grid-area: p-bin;
+        padding: 10px 0px;
+    }
+    #why-img {
+        width: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        grid-area: img-bin;
+    }
+}
+
+#contributors {
+    width: 100vw;
+    height: 30vh;
+    background-color: $blush;
+    .text-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        color: $black;
+    }
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    em {
+        font-weight: bold;
+    }
+}
+
+#support {
+    height: auto;
+    a {
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $black;
+        background-color: $rouge;
+        padding: 10px 40px;
+        border-radius: 25px;
+        &:hover {
+            background-color: $violet;
+        }
+        &:active {
+            background-color: $blush;
+        }
+        &:visited {
+            background-color: $blush;
+        }
     }
 }
 
 
-
-// navigation
-.site-navi { float: right; line-height: 54px; }
-.site-navi .nav-trigger { display: none; }
-.site-navi .menu-icon { display: none; }
-.site-navi .page-link { color: #111; line-height: 1.5; }
-.site-navi .page-link:not(:last-child) { margin-right: 20px; }
-@media screen and (max-width: 600px) { 
-    .site-navi { 
-        float: right;
-    }
-    .site-navi .nav-trigger { display: none; }
-    .site-navi .menu-icon { display: none; }
-    .site-navi .page-link { color: #111; line-height: 1.5; }
-    .site-navi .page-link:not(:last-child) { margin-right: 20px; }
-    .site-navi input ~ .trigger { clear: both; display: none; }
-    .site-navi input:checked ~ .trigger { display: block; padding-bottom: 5px; }
-}
+// footer
