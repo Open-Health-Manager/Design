@@ -34,9 +34,9 @@ include:
  - _pages
 
 header_pages:
- - _pages/about.md
+# - _pages/about.md
 # - _pages/donate.md *** Add this in once the donation page is live ***
- - _pages/contact.md
+# - _pages/contact.md
 
 # Build settings
 theme: minima
@@ -49,6 +49,11 @@ defaults:
    values:
      image: true
 
+# carousel
+carousels:
+  - images: 
+    - image: /assets/images/connect.png
+    - image: /assets/images/generate.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.

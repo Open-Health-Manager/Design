@@ -2,60 +2,72 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<article class="wrapper container" id="welcome">
+  <h1>Rosie the Health Manager</h1>
+  <p>puts you in the driver's seat for your own health</p>
+  <img src="/assets/background.png" id="mast"/>
+  <p>Rosie is a free personal health record (PHR), designed and built to safely keep all of an individual’s health records in one place.</p>
+</article>
 
-  {{ content }}
+<article class="container" id="how">
+  {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+      {% include carousel.html height="50" unit="%" duration="7" number="2" %}
+  <div class="wrapper">
+    <h2>How Rosie Works</h2>
+    <p>Rosie empowers you to practice Primary Self Care.</p>
+      
+    </div>
+  </article>
 
+<article class="container" id="four-elements">
+  <h2>Rosie's Four Elements</h2>
+  <section class="quad-container">
+    <section class="quad-item">
+      <h3>Patient Data Use Agreement (PDUA)</h3>
+      <p>A legal agreement between you and the patient data manager that gives you sole ownership rights of your health data and doest not allow the patient data manager to use, share, or sell your data without your explicit consent.</p>
+    </section>
+    <section class="quad-item">
+      <h3>Patient Data Manager (PDM)</h3>
+      <p>A service that acquires, aggregates, curates, shares and manages your patient's health data on your behalf.</p>
+    </section>
+    <section class="quad-item">
+      <h3>Standard Patient Health Record (SPHR)</h3>
+      <p>All data that is relevant to your health available to you in a standard and computable way.</p>
+    </section>
+    <section class="quad-item">
+      <h3>Patient Data Receipt</h3>
+      <p>A fully documented and standard receipt generated at the end of each and every healthcare transaction and made available to you or your patient data manager.</p>
+    </section>
+  </section>
+</article>
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+<article class="container" id="journey-map">
+  <h2>Patient Journey</h2>
+</article>
 
+<article class="container" id="why">
+  <h2 class="text">Why is Rosie Free?</h2>
+  <p class="text">A not-for-profit organization operating in the public interest, MITRE envisions a healthcare system designed around and with the patient, where individuals, families, and communities have the right data, tools, and resources to improve their health literacy and maximize health and well-being.
+  <br/>
+  <br/>
+  Rosie is a key component in realizing this vision.
+  <br/>
+  <br/>
+  To maximize availability and impact, Rosie is being developed as an open source project.
+  </p>
+  <img id="why-img" src="/assets/sources-of-your-data.png" alt="Image of the patient data manager system"/>
+</article>
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+<article class="container" id="contributors">
+  <h2>Contributors</h2>
+    <section class="text-box">
+      <p><em>MITRE</em> manages and funds the project, drives system engineering, and builds the patient data manager.</p>
+      <p><em>GoInvo</em> supports the project through design, planning, and healthcare design expertise.</p>
+    </section>
+</article>
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
-</div>
+<article class="container" id="support">
+  <h2>Want to support the project?</h2>
+  <p>Fund the project or add to the code.</p>
+  <a id="donate">Donate here</a>
+</article>
