@@ -18,7 +18,7 @@ gh repo clone Open-Health-Manager/Design
 
 3. Next, run `bundle install` in the `/docs` directory.
 
-4. Finally, run a local server using `bundle exec jekyll serve` and develop! You might want to develop on a separate branch from `main`, then create a pull request to merge your branch into `main` when your changes are ready for review.
+4. Finally, in the `/docs` directory run a local server using `bundle exec jekyll serve` and develop! You might want to develop on a separate branch from `main`, then create a pull request to merge your branch into `main` when your changes are ready for review.
 
 
 Note: Ruby must be up to date to 3.1.2, for mac instructions for updating ruby (gloabally accross system) check here: https://mac.install.guide/ruby/13.html
