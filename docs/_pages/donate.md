@@ -2,6 +2,7 @@
 layout: page
 title: Donate
 permalink: /Donate/
+published: false
 ---
 
 <!--- grey this out until it's live --->

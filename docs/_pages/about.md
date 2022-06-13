@@ -2,6 +2,7 @@
 permalink: /about/
 layout: page
 title: About
+published: false
 ---
 
 ## Rosie as a Health Manager
