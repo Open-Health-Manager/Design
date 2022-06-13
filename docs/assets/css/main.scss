@@ -145,10 +145,6 @@ header {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
-    border-bottom: solid 5px rgba(248, 119, 151, 0.5);
-    padding-bottom: 30px;
-
     .quad-container {
         margin-left: auto;
         margin-right: auto;
@@ -229,6 +225,7 @@ header {
 #support {
     height: auto;
     a {
+        display: none;
         margin: 20px;
         margin-left: auto;
         margin-right: auto;
