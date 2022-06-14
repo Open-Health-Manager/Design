@@ -120,7 +120,7 @@ header {
         margin: 0px;
     }
     p:last-of-type {
-        
+
         font-family: ubuntu;
         font-size: 1.5em;
     }
@@ -137,7 +137,6 @@ header {
 // section 2
 #how {
     background-image: linear-gradient(0,rgba(249,241,243,1)0%, rgba(255, 206, 218, 1) 100%);
-    width: 100%;
 }
 
 #four-elements {
@@ -146,13 +145,13 @@ header {
     margin-left: auto;
     margin-right: auto;
     .quad-container {
-        margin-left: auto;
-        margin-right: auto;
         display: grid;
-        grid-template-columns: 
-            400px 400px;
-        grid-template-rows:
-            auto auto;
+        align-items: start;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+        grid-template-columns:
+            repeat(auto-fit, minmax(300px, 1fr));
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
@@ -163,10 +162,6 @@ header {
         border-left: solid 5px rgba(248, 119, 151, 0.5);
         border-radius: 5px;
         padding:20px;
-        align-items:center;
-        justify-content:center;
-        max-width: 400px;
-        height: fit-content;
     }
 }
 
@@ -177,12 +172,13 @@ header {
 #why {
     height: auto;
     width: 80vw;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1.25fr;
-    grid-template-rows: 80px 400px;
     grid-template-areas:
-        "h2-bin img-bin"
-        "p-bin img-bin";
+        "h2-bin h2-bin"
+        "img-bin img-bin"
+        "p-bin p-bin";
     h2 {
         text-align: left;
         grid-area: h2-bin;
@@ -199,10 +195,20 @@ header {
         margin-right: auto;
         grid-area: img-bin;
     }
+    @media only screen and (min-width: 700px) {
+      grid-template-areas:
+          "h2-bin h2-bin"
+          "p-bin img-bin";
+    }
+    @media only screen and (min-width: 900px) {
+      grid-template-areas:
+          "h2-bin img-bin"
+          "p-bin img-bin";
+    }
 }
 
 #contributors {
-    width: 100vw;
+    padding: 0 1rem;
     background-color: $blush;
     .text-box {
         margin-left: auto;
@@ -224,6 +230,7 @@ header {
 
 #support {
     height: auto;
+    padding: 0 1rem;
     a {
         display: none;
         margin: 20px;
