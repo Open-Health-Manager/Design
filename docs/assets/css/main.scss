@@ -11,7 +11,7 @@ $blush: #fa99af;
 $rouge: #f87797;
 $accent-blue: #c3dfe0;
 $violet: #c99abb;
-$background-gradient: linear-gradient(0, rgba(195,223,224,1) 0%, rgba(249,241,243,1) 100%);
+$background-gradient: linear-gradient(0,rgba(249,241,243,1)0%, rgba(255, 206, 218, 1) 100%);
 
 // grey colors
 $black: #1f201d;
@@ -100,16 +100,19 @@ header {
 // main
 .container {
     h2 {
-        padding-top: 20px;
+        margin-top: 20px;
     }
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 // section 1
 #welcome {
+    margin-top: 0px;
     h1 {
         font-size: 3em;
         font-weight: 700;
@@ -127,7 +130,6 @@ header {
     #mast {
         width: 400px;
         height: auto;
-        margin: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -137,6 +139,9 @@ header {
 // section 2
 #how {
     background-image: linear-gradient(0,rgba(249,241,243,1)0%, rgba(255, 206, 218, 1) 100%);
+    em {
+        font-weight: bold;
+    }
 }
 
 #four-elements {
@@ -166,7 +171,18 @@ header {
 }
 
 #journey-map {
-    display: none;
+    background-image: linear-gradient(0, rgba(255, 206, 218, 1) 0%, rgba(249,241,243,1) 100%);
+    img {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: $stormy;
+        background-position: 5px 5px;
+    }
 }
 
 #why {
@@ -209,14 +225,14 @@ header {
 
 #contributors {
     padding: 0 1rem;
-    background-color: $blush;
+    background-color: rgba(255, 206, 218, 1);
     .text-box {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 30px;
     }
     h2 {
-        color: $black;
+        color: $stormy;
     }
     p {
         margin-left: auto;

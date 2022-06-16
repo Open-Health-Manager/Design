@@ -4,19 +4,19 @@ layout: default
 
 <article class="wrapper container" id="welcome">
   <h1>Rosie the Health Manager</h1>
-  <p>puts you in the driver's seat for your own health</p>
+  <p>puts you in the driver's seat of your health</p>
   <img src="assets/background.png" id="mast" />
   <p>
-    Rosie is a free personal health record (PHR), designed and built to safely
-    keep all of an individual’s health records in one place.
+    Rosie is a free, personal health record (PHR), designed and built to safely
+    keep all of an individual's health records in one place.
   </p>
 </article>
 
 <article class="container" id="how">
   <div class="wrapper">
     <h2>How Rosie Works</h2>
+    <p>Rosie empowers you to practice <em>Primary Self Care</em>.</p>
     {% include carousel.html height="200" unit="%" duration="7" number="1" %}
-    <p>Rosie empowers you to practice Primary Self Care.</p>
   </div>
 </article>
 
@@ -27,7 +27,7 @@ layout: default
       <h3>Patient Data Use Agreement (PDUA)</h3>
       <p>
         A legal agreement between you and the patient data manager that gives
-        you sole ownership rights of your health data and doest not allow the
+        you sole ownership rights of your health data and does not allow the
         patient data manager to use, share, or sell your data without your
         explicit consent.
       </p>
@@ -58,7 +58,12 @@ layout: default
 </article>
 
 <article class="container" id="journey-map">
-  <h2>Patient Journey</h2>
+  <section class="wrapper">
+    <!-- TODO: add a lightbox feature to the image -->
+    <h2>Patient Journey</h2>
+    <p>Rosie is empathetically designed with patients and their unique lived experiences, to best meet health goals and improve outcomes.</p>
+    <img src="assets/images/journeyMap.png" />
+  </section>
 </article>
 
 <article class="container" id="why">
@@ -77,6 +82,8 @@ layout: default
     To maximize availability and impact, Rosie is being developed as an open
     source project.
   </p>
+
+  <!-- TODO: add a lightbox feature to the image -->
   <img
     id="why-img"
     src="assets/sources-of-your-data.png"
