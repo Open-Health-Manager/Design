@@ -21,7 +21,7 @@
 title: Rosie
 email: rosie@rosiehealth.org
 description: >- # this means to ignore newlines until "baseurl:"
-  The open-source, free personal health manager.
+  The open-source, free digital health assistant
 baseurl: / # the subpath of your site, e.g. /blog
 url: "https://open-health-manager.github.io/Design/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Open-Health-Manager
