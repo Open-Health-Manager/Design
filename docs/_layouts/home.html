@@ -15,7 +15,10 @@ layout: default
   <div class="wrapper">
     <h2>How Rosie Works</h2>
     <p>Rosie empowers you to practice <em>Primary Self Care</em>.</p>
-    {% include carousel.html height="200" unit="%" duration="7" number="1" %}
+    <section id="mobile-carousel">
+      {% include carousel.html height="200" unit="%" duration="7" number="1" %}
+    </section>
+    <section id="desktop-images"></section>
   </div>
 </article>
 
@@ -59,8 +62,57 @@ layout: default
 <article class="container" id="journey-map">
   <section class="wrapper">
     <!-- TODO: add a lightbox feature to the image -->
-    <h2>Patient Journey</h2>
-    <p>Rosie is empathetically designed with patients and their unique lived experiences, to best meet health goals and improve outcomes.</p>
+    <h2>How Rosie Meets Intersectional Needs...</h2>
+    <section id="prenatal" class="story-grid-item">
+      <h3>Prenatal Care</h3>
+      <a id="alyssa" href="assets/images/journeyMap.png">
+        <p>Alyssa's Story</p>
+        <p class="black-groups trailing-bullet">◆</p>
+        <p class="low-income-groups trailing-bullet">◆</p>
+      </a>
+      <a id="amhara"><p>Amhara's Story</p>
+        <p class="black-groups trailing-bullet">◆</p>
+      </a>
+    </section>
+    <section id="family-health" class="story-grid-item">
+      <h3>Family Health</h3>
+      <a id="allison"><p>Allison's Story</p>
+        <p class="low-income-groups trailing-bullet">◆</p>
+      </a>
+      <a id="naja"><p>Naja's Story</p>
+        <p class="indigenous-groups trailing-bullet">◆</p>
+        <p class="disability-groups trailing-bullet">◆</p>
+      </a>
+    </section>
+    <section id="chronic" class="story-grid-item">    
+      <h3>Chronic Illness & Preventive Care</h3>
+      <a id="sammy"><p>Sammy's Story</p>
+        <p class="senior-groups trailing-bullet">◆</p>
+        <p class="low-income-groups trailing-bullet">◆</p>
+      </a>
+      <a id="choko"><p>Choko's Story</p>
+        <p class="hispanic-groups trailing-bullet">◆</p>
+        <p class="low-income-groups trailing-bullet">◆</p>
+      </a>
+      <a id="tommy"><p>Tommy's Story</p>
+        <p class="indigenous-groups trailing-bullet">◆</p>
+        <p class="low-income-groups trailing-bullet">◆</p>
+      </a>
+      <a id="jamie"><p>Jamie's Story</p>
+        <p class="black-groups trailing-bullet">◆</p>
+        <p class="veteran-groups trailing-bullet">◆</p>
+      </a>
+    </section>
+    <ul id="community-list" class="story-grid-item">
+      <li class="black-groups">African-American & Black Communities</li>
+      <li class="indigenous-groups">Indigenous American Communities</li>
+      <li class="veteran-groups">Veterans</li>
+      <li class="hispanic-groups">Hispanic & Latine Communities</li>
+      <li class="senior-groups">Seniors</li>
+      <li class="low-income-groups">People with Low Socioeconomic Status</li>
+      <li class="disability-groups">Persons living with Disabilities</li>
+    </ul>
+    <!-- Old JM image
     <a 
       href="assets/images/journeyMap.png"
     >
@@ -68,6 +120,7 @@ layout: default
         src="assets/images/journeyMap.png"
       />
     </a>
+    -->
     
   </section>
 </article>
