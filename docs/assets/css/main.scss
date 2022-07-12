@@ -146,6 +146,52 @@ p {
     em {
         font-weight: bold;
     }
+    #tablet-images {
+        display: none;
+    }
+    #desktop-images {
+        display: none;
+    }
+    @media screen and (min-width: 900px) {
+        .wrapper {
+            max-width: 900px;
+        }
+        #mobile-carousel {
+            display: none;
+        }
+        #tablet-images {
+            margin: 20px auto;
+            display: grid;
+            height: auto;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            img {
+                margin: 0 auto;
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+    @media screen and (min-width: 1535px) {
+        .wrapper {
+            max-width: 1535px;
+        }
+        #mobile-carousel {
+            display: none;
+        }
+        #tablet-images {
+            display: none;
+        }
+        #desktop-images {
+            margin: 20px;
+            display: block;
+            img {
+                width: 175px;
+                height: auto;
+            }
+        }
+    }
 }
 
 #four-elements {
